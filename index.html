@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treino Paloma - Semana 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<div class="max-w-4xl mx-auto p-6">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold">🔥 Treino Híbrido – Semana 1</h1>
+    <button id="toggleDark" class="px-4 py-2 bg-yellow-500 rounded text-white">🌙 Modo Escuro</button>
+  </div>
+
+  <p class="text-lg font-medium mb-4">
+    Aluna: <strong>Paloma Danielle Rolim Pereira</strong> |
+    Objetivo: <strong>Emagrecimento com ganho de massa</strong>
+  </p>
+
+  <div id="treinoContainer" class="space-y-8"></div>
+
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow mt-10">
+    <h2 class="text-2xl font-semibold mb-3">📌 Instruções da Semana</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Alongar todos os dias com foco em lombar, posterior e glúteos.</li>
+      <li>Usar cinta abdominal leve nos treinos de inferiores se necessário.</li>
+      <li>Evitar impacto (sem corrida intensa ou saltos).</li>
+      <li>Treinar em intensidade leve a moderada.</li>
+      <li>Manter boa hidratação e sono.</li>
+    </ul>
+  </div>
+
+  <div class="mt-10 space-y-4">
+    <h2 class="text-2xl font-semibold">🧠 Feedback da Semana</h2>
+    <textarea id="feedback" rows="4" class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:border-gray-600" placeholder="Como você se sentiu nos treinos desta semana?"></textarea>
+    <button onclick="exportarPDF()" class="px-6 py-2 bg-green-600 text-white rounded shadow">📄 Exportar PDF</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
