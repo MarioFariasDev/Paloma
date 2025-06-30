@@ -54,11 +54,14 @@ header p {
 }
 
 .card {
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--card-shadow);
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
 }
 
 .card h2 {
